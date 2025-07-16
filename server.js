@@ -11,6 +11,8 @@ const KEY_ID = process.env.MUX_KEY_ID;
 
 app.get("/get-mux-token", (req, res) => {
 //   const playbackId = req.query.playback_id;
+const playbackId = req.query.playback_id?.trim();
+
 
   if (!playbackId) return res.status(400).send("Missing playback_id");
 
