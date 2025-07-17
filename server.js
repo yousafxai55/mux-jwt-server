@@ -32,4 +32,4 @@ const playbackId = req.query.playback_id?.trim();
   res.json({ token });
 });
 
-app.listen(port, () => console.log(`✅ JWT server running on port ${port}`));
+app.listen(port, () => console.log(` JWT server running on port ${port}`));
